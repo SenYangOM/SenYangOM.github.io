@@ -1,0 +1,16 @@
+# main navigation
+main:
+  - title: "Projects"
+    url: /projects/
+
+  - title: "Publications"
+    url: /publications/
+
+  - title: "Blog"
+    url: /year-archive/
+
+  - title: "CV"
+    url: /cv/
+
+  - title: "Contact"
+    url: /contact/
