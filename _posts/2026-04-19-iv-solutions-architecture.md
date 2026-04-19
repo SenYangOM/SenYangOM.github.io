@@ -42,4 +42,4 @@ That's the research direction I'm most excited about.
 
 ---
 
-*Repo: [github.com/SenYangOM/iv_solutions](https://github.com/SenYangOM/iv_solutions). Comments / questions: imbenliu [at] gmail.*
+*Repo: [github.com/SenYangOM/iv_solutions](https://github.com/SenYangOM/iv_solutions). Comments / questions: sy2576 [at] stern.nyu.edu.*

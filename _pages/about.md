@@ -19,13 +19,12 @@ In parallel I build **LLM-agent systems** that take research methods to industri
 
 Before NYU, I received a B.Sc. in Mathematics from **CUHK** with First Class Honours. I have also been a Quantitative Research Summer Intern at **Optiver US** (0-dte SPXW volatility-change-rate estimation).
 
-I am based in New York City. Best reached at **imbenliu [at] gmail [dot] com**.
+I am based in New York City. Best reached at **sy2576 [at] stern [dot] nyu [dot] edu**.
 
 <br clear="left"/>
 
 # News
 
-* **2026-04** — Submitting applications to the OpenAI Research Scientist/Engineer Early Career Cohort and the Anthropic Fellows Program.
 * **2026-02** — Concluded a 6-month QR research engagement at Cubist (Point72); shipped *AlphaBot* end-to-end with 80+ validated meta-alphas across momentum, mean-reversion, liquidity, and information-flow categories.
 * **2025-12** — Released first internal MVP of [`iv_solutions`](https://github.com/SenYangOM/iv_solutions) — agent-native accounting interpretation with paper-derived skills (Beneish M-Score, Altman Z) and citation-grounded outputs.
 * **2025-08** — Defended PhD dissertation at NYU Stern on adaptive gradient descent algorithms for online optimization in operations.

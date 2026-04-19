@@ -5,7 +5,7 @@ permalink: /contact/
 author_profile: true
 ---
 
-**Email** — imbenliu [at] gmail [dot] com (personal) · sy2576 [at] stern.nyu.edu (academic)
+**Email** — sy2576 [at] stern.nyu.edu
 
 **LinkedIn** — [linkedin.com/in/sen-yang](https://www.linkedin.com/in/sen-yang-5a9b6a12b/)
 
@@ -14,3 +14,5 @@ author_profile: true
 **Location** — New York, NY (USA)
 
 For research collaborations, hiring inquiries, or to request the 18-month crypto trading PnL track record referenced on the Projects page, email is best.
+
+
