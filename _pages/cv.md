@@ -38,7 +38,7 @@ redirect_from:
 
 # Personal projects
 
-* **[`iv_solutions`](https://github.com/SenYangOM/iv_solutions)** — agent-native machine-readable accounting interpretation. Layered L0–L5 architecture, 4 LLM-subagent personas, 7 MVP skills (incl. Beneish M-Score + Altman Z vertical slice), MCP + OpenAI tool surfaces, 380 passing tests.
+* **[`iv_solutions`](https://github.com/SenYangOM/iv_solutions)** — a framework that treats peer-reviewed methodology from finance, accounting, economics, and operations research as a first-class tool surface for LLM agents. Three-layer architecture: data layer (APIs + MCP connectors to filings and market data), skill layer (citation-grounded, test-verified implementations derived from academic papers), solution layer (workflows and sub-agents composing data and skills into concrete applications). Parallel MCP + OpenAI tool surfaces; four LLM sub-agent personas for self-validation and citation auditing.
 
 * **Self-funded crypto research account** — 18-month live track on a $10K test account, mid-frequency, ~55% trailing-year returns. Pipeline architecture mirrors AlphaBot. PnL link sharable on request.
 

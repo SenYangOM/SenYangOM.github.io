@@ -1,44 +1,50 @@
 ---
-title: "iv_solutions: building accounting interpretation as an LLM-native skill library"
+title: "iv_solutions: peer-reviewed methodology as a tool surface for LLM agents"
 date: 2026-04-19
 permalink: /posts/2026/04/iv-solutions-architecture/
 tags:
   - llm-agents
   - architecture
-  - accounting
   - mcp
+  - tool-use
 ---
 
-> **Status: draft.** Full writeup coming soon. Below is the outline I'm filling in.
+> **Status: draft.** A longer writeup is in preparation. The outline below records the framing.
 
-## The thesis
+## The premise
 
-Most "AI for finance" tools today are wrappers around chat. `iv_solutions` is built on the opposite premise: **the LLM is the user**, not the interface.
+Most "AI for finance" tools today are wrappers around chat, with a human as the user of the language model. `iv_solutions` is built on the inverted premise: the language model is the user, and the system exposes verifiable, citation-grounded methodology as the tool surface it consumes.
 
-A skill is only useful to an agent if it returns *machine-readable, citation-grounded, schema-valid output*. Free-text answers are a regression on an audited spreadsheet, not a step forward.
+The ambition is not a single domain. Finance, accounting, economics, and operations research have produced decades of peer-reviewed methods — each with a formula, a data requirement, an empirical validation, and a citation. Making those methods available to an LLM agent as typed, test-backed, provenance-tracked skills turns the academic literature into a form of infrastructure that agents can call against.
 
 ## The architecture
 
-* **L0–L5 layered store** — sources → ingestion → standardization → interpretation rules + engine → skills library → delivery.
-* **Two parallel surfaces** — MCP server + OpenAI tool spec — same skill library, no translation glue.
-* **Four LLM-subagent personas** replacing what would historically be human experts: `accounting_expert`, `quant_finance_methodologist`, `evaluation_agent`, `citation_auditor`. Each is a YAML-configurable prompt over a shared Claude / OpenAI runtime.
-* **Citation-grounded outputs.** Every numeric output traces back to (a) the source filing line item, (b) the academic paper that defines the formula.
+Three layers, each with its own contract.
 
-## The MVP slice
+**Data layer.** Ingestion of corporate disclosures (SEC filings, XBRL / iXBRL), market data, and related sources through APIs and MCP connectors. Standardized into a layered store (L0 raw → L5 delivery) with typed schemas, versioning, and deterministic replay.
 
-Seven skills shipped. Two fundamental, two interpretation, two paper-derived (Beneish M-Score + Altman Z), one composite. 380 passing tests.
+**Skill layer.** Citation-grounded implementations derived directly from peer-reviewed papers. Each skill carries:
 
-Canonical demo:
-```
-mvp run analyze_for_red_flags --cik 0001024401 --year 2000
-```
-This runs the full pipeline against the historical Enron 10-K — a known-positive case used as a regression check.
+- the formula and its paper reference;
+- a test harness against known cases;
+- a provenance trace from numeric output down to the source filing line item;
+- a declarative interface callable from either an MCP server or an OpenAI tool specification — one library, two surfaces, no translation glue.
 
-## The bigger bet
+**Solution layer.** Compositions of data and skills into workflows and sub-agents for concrete applications. Four LLM sub-agent personas — `accounting_expert`, `quant_finance_methodologist`, `evaluation_agent`, `citation_auditor` — self-validate outputs and flag hallucinated citations before delivery.
 
-If a skill is paper-derived and citation-audited, then a *library* of skills becomes a network whose topology mirrors the citation/conceptual structure of the literature. That network — once large enough — could be a high-quality **post-training substrate** for tool-using LLMs in narrow technical domains, with each skill providing both a tool-use trace *and* a verifiable ground-truth signal.
+## A worked example
 
-That's the research direction I'm most excited about.
+The current vertical slice chains fundamental extraction, the Beneish M-Score, and the Altman Z-Score into a composite red-flag report. Every numeric output in the report is traceable to (a) a specific source filing line item and (b) the academic paper that defines the formula.
+
+## AlphaBot as a solution-layer instance
+
+*AlphaBot*, the multi-LLM pipeline for systematic alpha discovery I built at Cubist (Point72), is one concrete instance of the solution layer — specialized to US-equities alpha research. The same scaffolding — data layer + skill library + composed sub-agents + evaluation harness — underpins both the accounting-interpretation vertical and the alpha-research vertical, which is the point of the three-layer framing: the solution layer is where domains diverge; the data and skill layers are shared infrastructure.
+
+## The research direction
+
+If skills are paper-derived and citation-audited, a *library* of skills is more than a collection — it is a graph whose topology mirrors the citation and conceptual structure of the underlying literature. That graph is, in principle, a structured post-training substrate for tool-using LLMs: each skill supplies both a tool-use trace and a verifiable ground-truth signal, and the citation topology supplies a natural curriculum from primitive methods to composite ones.
+
+This is the research direction I find most promising and the reason the broader framework exists.
 
 ---
 
