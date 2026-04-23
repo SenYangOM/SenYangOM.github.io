@@ -25,22 +25,12 @@ A research direction that motivates the broader project is the use of **academic
 ## AlphaBot
 *Quantitative Research Intern, Cubist (Point72), Sep 2025 – Feb 2026*
 
-A concrete instance of the *iv_solutions* solution layer, specialized to systematic alpha discovery on US equities. Four language models — Claude Opus, Sonnet, OpenAI, and Gemini — propose candidate factor expressions, conditioned on a declarative primitive library. Proposals are parsed, syntactically repaired, and backtested under train/validate splits with overfitting-aware selection (rolling-period statistical validation, odd/even-sample consistency checks, joint train/validate Sharpe thresholds). Survivors are parameter-tuned and evaluated on an out-of-sample holdout; a harness calibrated to hedge-fund-grade quant-research review — not the language model — decides what survives. Downstream, surviving factors feed ensemble prediction models across regression families, loss functions, and targets.
+A concrete instance of the *iv_solutions* solution layer, specialized to systematic alpha discovery on US equities. The system inherits the same three-layer structure:
 
-The same architecture also runs on an independent self-funded crypto research account outside Cubist, as a cross-market validation of the scaffolding. [Live performance is public](https://dash.300k.xyz/group/300kinvestorshowcaseaccounts?period=30d) — please set the time range to Jan 1, 2025 to view the full track.
+- **Data layer.** Ingestion of US-equities market data — prices, volumes, fundamentals, and microstructure signals — into a normalized research store.
+- **Skill layer.** A library of factor primitives that implement well-established quantitative concepts drawn from statistics, computer science, physics, and operations research, each packaged as a declarative, test-backed skill.
+- **Agent layer.** Sub-agents compose these skills into a research workflow: a brainstorming agent proposes candidate factor expressions from the primitive library; a backtesting agent runs harness-gated validation under train/validate splits with overfitting-aware selection; a feature-selection agent filters survivors; a prediction-model agent builds ensemble forecasts across regression families, loss functions, and targets.
+
+A harness calibrated to hedge-fund-grade quant-research review — not the language model — decides what survives. The same architecture also runs on an independent self-funded crypto research account outside Cubist, as a cross-market validation of the scaffolding. [Live performance is public](https://dash.300k.xyz/group/300kinvestorshowcaseaccounts?period=30d) — please set the time range to Jan 1, 2025 to view the full track.
 
 *A sanitized technical writeup is forthcoming — pending Cubist review.*
-
----
-
-## Working papers
-
-### Adaptive Gradient Descent Algorithms for Online Optimization in Operations
-*Sen Yang, Jinzhi Bu, Siyi Wang. Working paper, 2024–.*
-
-Adaptive online stochastic gradient descent for non-stationary environments, achieving state-of-the-art sublinear regret **even when the magnitude of environmental variation is unknown a priori**. Applications to multi-product inventory control, portfolio selection, and broader online convex optimization problems. *arXiv preprint forthcoming.*
-
-### Online Gradient Descent for Multi-Item E-commerce Order Fulfillment
-*Sen Yang, Divya Singhvi, Jiawei Zhang. Working paper, 2024–.*
-
-A primal–dual online gradient descent algorithm for the large-scale e-commerce fulfillment problem. The algorithm maintains dual prices for inventory using the gap between LP-relaxed primal solutions and actual fulfillment decisions as the gradient signal, sidestepping the need for a separate dual oracle. *arXiv preprint forthcoming.*
