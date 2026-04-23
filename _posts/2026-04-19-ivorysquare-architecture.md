@@ -1,7 +1,7 @@
 ---
-title: "iv_solutions: peer-reviewed methodology as a tool surface for LLM agents"
+title: "IvorySquare: peer-reviewed methodology as a tool surface for LLM agents"
 date: 2026-04-19
-permalink: /posts/2026/04/iv-solutions-architecture/
+permalink: /posts/2026/04/ivorysquare-architecture/
 tags:
   - llm-agents
   - architecture
@@ -11,9 +11,11 @@ tags:
 
 > **Status: draft.** A longer writeup is in preparation. The outline below records the framing.
 
+*IvorySquare — an open Ivory Tower for everyone.*
+
 ## The premise
 
-Most "AI for finance" tools today are wrappers around chat, with a human as the user of the language model. `iv_solutions` is built on the inverted premise: the language model is the user, and the system exposes verifiable, citation-grounded methodology as the tool surface it consumes.
+Most "AI for finance" tools today are wrappers around chat, with a human as the user of the language model. IvorySquare is built on the inverted premise: the language model is the user, and the system exposes verifiable, citation-grounded methodology as the tool surface it consumes.
 
 The ambition is not a single domain. Finance, accounting, economics, and operations research have produced decades of peer-reviewed methods — each with a formula, a data requirement, an empirical validation, and a citation. Making those methods available to an LLM agent as typed, test-backed, provenance-tracked skills turns the academic literature into a form of infrastructure that agents can call against.
 
@@ -38,9 +40,9 @@ Three components, each with its own contract, plus a purpose-built evaluation ha
 
 The current vertical slice chains fundamental extraction, the Beneish M-Score, and the Altman Z-Score into a composite red-flag report. Every numeric output in the report is traceable to (a) a specific source filing line item and (b) the academic paper that defines the formula.
 
-## AlphaBot as a solution-layer instance
+## AlphaBot as a solutions instance
 
-*AlphaBot*, the multi-LLM pipeline for systematic alpha discovery I built at Cubist (Point72), is one concrete instance of the solution layer — specialized to US-equities alpha research. The same scaffolding — data layer + skill library + composed sub-agents + evaluation harness — underpins both the accounting-interpretation vertical and the alpha-research vertical, which is the point of the three-layer framing: the solution layer is where domains diverge; the data and skill layers are shared infrastructure.
+*AlphaBot*, the multi-LLM pipeline for systematic alpha discovery I built at Cubist (Point72), is one concrete instance of the *solutions* component — specialized to US-equities alpha research. The same scaffolding — data ingestion, a skill library, composed sub-agents, and an evaluation harness — underpins both the accounting-interpretation vertical and the alpha-research vertical, which is the point of the three-component framing: the solutions component is where domains diverge; the data and skill components are shared infrastructure.
 
 ## The research direction
 
@@ -50,4 +52,4 @@ This is the research direction I find most promising and the reason the broader 
 
 ---
 
-*Repo: [github.com/SenYangOM/iv_solutions](https://github.com/SenYangOM/iv_solutions). Comments / questions: sy2576 [at] stern.nyu.edu.*
+*Repo: [github.com/SenYangOM/iv_solutions](https://github.com/SenYangOM/iv_solutions) (to be renamed). Comments / questions: sy2576 [at] stern.nyu.edu.*

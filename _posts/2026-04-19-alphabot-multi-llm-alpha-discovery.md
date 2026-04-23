@@ -15,7 +15,7 @@ tags:
 
 A pipeline that takes hypotheses about market microstructure — expressed as declarative primitives — through brainstorming, parsing, and harness-gated backtesting, and returns factor expressions that survive out-of-sample evaluation. Four language models collaborate on the proposal step; a harness calibrated to hedge-fund-grade quant-research review decides what survives.
 
-AlphaBot is one concrete instance of the solution layer in the broader [iv_solutions](/posts/2026/04/iv-solutions-architecture/) framework, specialized to US-equities alpha research.
+AlphaBot is one concrete instance of the broader [IvorySquare](/posts/2026/04/ivorysquare-architecture/) framework, specialized to US-equities alpha research.
 
 ## Why a closed loop matters
 

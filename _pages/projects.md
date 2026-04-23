@@ -7,8 +7,8 @@ author_profile: true
 
 {% include base_path %}
 
-## [iv_solutions](https://github.com/SenYangOM/iv_solutions)
-*2025–present*
+## [IvorySquare](https://github.com/SenYangOM/iv_solutions)
+*An open Ivory Tower for everyone. 2025–present.*
 
 A system for treating peer-reviewed methodology — across finance, accounting, economics, and operations research — as a first-class tool surface for LLM agents. The architecture has three components:
 
@@ -25,7 +25,7 @@ A research direction that motivates the broader project is the use of **academic
 ## AlphaBot
 *Quantitative Research Intern, Cubist (Point72), Sep 2025 – Feb 2026*
 
-A concrete instance of the *iv_solutions* framework, specialized to systematic alpha discovery on US equities. The system comprises three components and a purpose-built evaluation harness:
+A concrete instance of the *IvorySquare* framework, specialized to systematic alpha discovery on US equities. The system comprises three components and a purpose-built evaluation harness:
 
 - **Data.** Ingestion of US-equities market data — prices, volumes, fundamentals, and microstructure signals — into a normalized research store.
 - **Skills.** A library of factor primitives that implement well-established quantitative concepts drawn from statistics, computer science, physics, and operations research, each packaged as a declarative, test-backed skill.
