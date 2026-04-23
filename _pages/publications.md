@@ -7,7 +7,7 @@ author_profile: true
 
 ## Working papers
 
-**[Adaptive Gradient Descent Algorithms for Online Optimization Problems in Operations](#)**<br>
+**[Adaptive Gradient Descent Algorithms for Online Optimization Problems in Operations](/files/Dissertation_SenYang.pdf)**<br>
 **Sen Yang**, Jinzhi Bu, Siyi Wang. *Working paper, 2024–. arXiv preprint forthcoming.*
 
 > Develops adaptive online stochastic gradient descent algorithms achieving state-of-the-art sublinear regret in non-stationary environments — *even when the magnitude of environmental variation is unknown a priori*. Applications to multi-product inventory control, portfolio selection, and broader online convex optimization.
@@ -19,10 +19,4 @@ author_profile: true
 
 ## Talks & teaching
 
-* **Instructor**, *Operations Management* — NYU Stern, J-term 2022. (Course evaluation 4.0 / 5.0.)
-
-## Awards & honors
-
-* **Funding Master Gold Medal for Graduating Students** — Wu Yee Sun College, CUHK.
-* **Admission Scholarship — Mainland**, CUHK (full tuition waiver, 4 years).
-* B.Sc. Mathematics, **First Class Honours** — CUHK, 2018.
+* **Instructor**, *Introduction to Operations Management* — NYU Stern, J-term 2022. (Course evaluation 4.0 / 5.0.)
