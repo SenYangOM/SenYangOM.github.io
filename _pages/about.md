@@ -26,19 +26,18 @@ I am based in New York City. Email: sy2576 [at] stern [dot] nyu [dot] edu.
 
 # Research Interests
 
-**Online learning and stochastic optimization**
-- adaptive gradient methods
-- non-stationary environments
-- primal–dual algorithms for resource allocation
-- bandit theory
+**Online Learning, Stochastic Optimization, and Sequential Decision-Making**
+- Adaptive online stochastic gradient descent and regret minimization in non-stationary environments
+- Primal–dual algorithms for online resource allocation (inventory control, e-commerce fulfillment, revenue management)
+- Bandit theory and online convex optimization under structured uncertainty
 
-**LLM-agent systems**
-- multi-agent pipelines with closed-loop evaluation harnesses
-- paper-derived skill libraries
-- agent-native tool surfaces (MCP / OpenAI tools)
-- tool-use as a post-training substrate
+**LLM-Agent Systems and Tool-Using AI**
+- Multi-agent pipelines with closed-loop evaluation harnesses and verifiable, citation-grounded outputs
+- Paper-derived skill libraries and agent-native tool surfaces (MCP servers, OpenAI tool specifications)
+- Tool-use as a structured post-training substrate for domain-specialized LLMs
+- Evaluation, hallucination mitigation, and trustworthiness of domain agents
 
-**Quantitative finance applications**
-- systematic alpha research
-- ensemble modeling for return prediction
-- options and volatility estimation
+**Quantitative Finance, Alpha Research, and Volatility Modeling**
+- Systematic alpha research and explainable factor discovery in equity and crypto markets
+- Ensemble modeling for return prediction across regression families, loss functions, and horizons
+- Options theory and volatility-change-rate estimation for short-dated derivatives
