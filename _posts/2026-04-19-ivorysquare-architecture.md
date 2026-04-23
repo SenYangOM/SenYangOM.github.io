@@ -52,4 +52,4 @@ This is the research direction I find most promising and the reason the broader 
 
 ---
 
-*Repo: [github.com/SenYangOM/iv_solutions](https://github.com/SenYangOM/iv_solutions) (to be renamed). Comments / questions: sy2576 [at] stern.nyu.edu.*
+*Repo: [github.com/SenYangOM/IvorySquareSolutions](https://github.com/SenYangOM/IvorySquareSolutions). Comments / questions: sy2576 [at] stern.nyu.edu.*

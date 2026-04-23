@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-## [IvorySquare](https://github.com/SenYangOM/iv_solutions)
+## [IvorySquare](https://github.com/SenYangOM/IvorySquareSolutions)
 *An open Ivory Tower for everyone. 2025–present. In collaboration with Han Yan.*
 
 A system for treating peer-reviewed methodology — across finance, accounting, economics, and operations research — as a first-class tool surface for LLM agents. The architecture has three components:
