@@ -41,7 +41,7 @@ The language models propose. The harness disposes.
 
 ## The cross-market check
 
-The same pipeline architecture also runs on a self-funded crypto research account I keep outside Cubist. Two different markets, same scaffolding — which is the point: when the same agent architecture produces surviving factors in markets with very different microstructure, the scaffolding is doing real work.
+The same pipeline architecture also runs on a self-funded crypto research project I keep outside Cubist. Two different markets, same scaffolding — which is the point: when the same agent architecture produces surviving factors in markets with very different microstructure, the scaffolding is doing real work.
 
 ---
 
