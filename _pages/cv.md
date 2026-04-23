@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-> 📄 **Download PDF:** [SenYang_NYU_CV.pdf](/files/SenYang_NYU_CV.pdf)
+> 📄 **Download PDF:** [SenYang_NYU_CV_Apr26.pdf](/files/SenYang_NYU_CV_Apr26.pdf)
 >
 > *(Last refreshed April 2026.)*
 
@@ -53,6 +53,4 @@ redirect_from:
 
 # Skills
 
-* **Languages:** Python (research + production), MATLAB, LaTeX. Working: Bash, SQL.
-* **ML / agents:** PyTorch, scikit-learn, multi-LLM orchestration (Claude, OpenAI, Gemini), MCP, agent design.
-* **Quant tools:** statistical alpha research, ensemble modeling, factor analysis, options theory.
+* **Languages:** Python, MATLAB.
