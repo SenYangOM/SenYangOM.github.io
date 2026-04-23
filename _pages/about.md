@@ -14,7 +14,7 @@ I am a final-year Ph.D. candidate in Operations Management at NYU Stern, advised
 
 In parallel, I build LLM-agent systems that bring peer-reviewed methodology into practical use. My current project, [iv_solutions](https://github.com/SenYangOM/iv_solutions), treats academic methodology from finance, accounting, economics, and operations research as a first-class tool surface for LLM agents. The system is organized in three layers: a **data layer** that connects to corporate disclosures, standardized filings, and market data through APIs and MCP; a **skill layer** of citation-grounded, test-verified implementations derived directly from peer-reviewed papers; and a **solution layer** that composes data and skills into workflows and sub-agents for concrete applications.
 
-*AlphaBot*, built during a research engagement at Cubist (Point72), is one such solution — a multi-LLM pipeline specialized to systematic alpha discovery on US equities. Language models propose candidate factors; the pipeline parses and backtests them under train/validate splits, and a harness calibrated to hedge-fund-grade quant-research review — not the language model — decides which factors survive. The same architecture also runs on an independent crypto research account outside Cubist as a cross-market check.
+*AlphaBot*, built during a research engagement at Cubist (Point72), is one such solution — a multi-LLM pipeline specialized to systematic alpha discovery on US equities. Language models propose candidate factors; the pipeline parses and backtests them under train/validate splits, and a harness calibrated to hedge-fund-grade quant-research review — not the language model — decides which factors survive. The same architecture also runs on an independent self-funded crypto research account outside Cubist as a cross-market check — [live performance is public](https://dash.300k.xyz/group/300kinvestorshowcaseaccounts?period=30d) (please set the time range to Jan 1, 2025 to view the full track).
 
 A research direction I find particularly promising is the **use of academic citation networks as a structured post-training substrate for tool-using LLMs**. The topology of how ideas build from primitive methods to composite ones is a natural curriculum; a paper-indexed library of verifiable, test-backed skills turns that curriculum into supervised tool-use data.
 
@@ -36,4 +36,4 @@ I am based in New York City. Email: sy2576 [at] stern [dot] nyu [dot] edu.
 - Evaluation, hallucination mitigation, and trustworthy AI
 
 **Quantitative Finance and Alpha Research**
-- Systematic alpha research and explainable factor discovery in equity and crypto markets
+- Systematic alpha research and explainable factor discovery

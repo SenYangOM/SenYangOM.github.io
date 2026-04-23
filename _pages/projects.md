@@ -27,7 +27,7 @@ A research direction that motivates the broader project is the use of **academic
 
 A concrete instance of the *iv_solutions* solution layer, specialized to systematic alpha discovery on US equities. Four language models — Claude Opus, Sonnet, OpenAI, and Gemini — propose candidate factor expressions, conditioned on a declarative primitive library. Proposals are parsed, syntactically repaired, and backtested under train/validate splits with overfitting-aware selection (rolling-period statistical validation, odd/even-sample consistency checks, joint train/validate Sharpe thresholds). Survivors are parameter-tuned and evaluated on an out-of-sample holdout; a harness calibrated to hedge-fund-grade quant-research review — not the language model — decides what survives. Downstream, surviving factors feed ensemble prediction models across regression families, loss functions, and targets.
 
-The same architecture also runs on an independent self-funded crypto research account outside Cubist, as a cross-market validation of the scaffolding.
+The same architecture also runs on an independent self-funded crypto research account outside Cubist, as a cross-market validation of the scaffolding. [Live performance is public](https://dash.300k.xyz/group/300kinvestorshowcaseaccounts?period=30d) — please set the time range to Jan 1, 2025 to view the full track.
 
 *A sanitized technical writeup is forthcoming — pending Cubist review.*
 
