@@ -19,18 +19,20 @@ The ambition is not a single domain. Finance, accounting, economics, and operati
 
 ## The architecture
 
-Three layers, each with its own contract.
+Three components, each with its own contract, plus a purpose-built evaluation harness that gates every solution.
 
-**Data layer.** Ingestion of corporate disclosures (SEC filings, XBRL / iXBRL), market data, and related sources through APIs and MCP connectors. Standardized into a layered store (L0 raw → L5 delivery) with typed schemas, versioning, and deterministic replay.
+**Data.** Ingestion of corporate disclosures (SEC filings, XBRL / iXBRL), market data, and related sources through APIs and MCP connectors. Standardized into a typed store (L0 raw → L5 delivery) with versioning and deterministic replay.
 
-**Skill layer.** Citation-grounded implementations derived directly from peer-reviewed papers. Each skill carries:
+**Skills.** Citation-grounded implementations derived directly from peer-reviewed papers. Each skill carries:
 
 - the formula and its paper reference;
-- a test harness against known cases;
+- a unit-test harness against known cases;
 - a provenance trace from numeric output down to the source filing line item;
 - a declarative interface callable from either an MCP server or an OpenAI tool specification — one library, two surfaces, no translation glue.
 
-**Solution layer.** Compositions of data and skills into workflows and sub-agents for concrete applications. Four LLM sub-agent personas — `accounting_expert`, `quant_finance_methodologist`, `evaluation_agent`, `citation_auditor` — self-validate outputs and flag hallucinated citations before delivery.
+**Solutions.** Compositions of data and skills into workflows and sub-agents for concrete applications. Four LLM sub-agent personas — `accounting_expert`, `quant_finance_methodologist`, `evaluation_agent`, `citation_auditor` — self-validate outputs and flag hallucinated citations before delivery.
+
+**Evaluation harness.** A first-class design concern, not an afterthought. Every solution is gated by an evaluation harness tuned to the review bar of the domain it serves — rubric-driven scoring for accounting interpretation, overfitting-aware statistical validation for quantitative research. The harness, not the language model, decides what ships.
 
 ## A worked example
 
