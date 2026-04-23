@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Sen Yang"
 title_separator          : "-"
 name                     : &name "Sen Yang"
-description              : &description "Ph.D. candidate, Operations Management, NYU Stern. Online learning, stochastic optimization, and LLM-agent systems."
+description              : &description "Ph.D., Operations Management, NYU Stern. Online learning, stochastic optimization, and LLM-agent systems."
 url                      : https://senyangom.github.io # the base hostname & protocol for your site
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "SenYangOM/SenYangOM.github.io"
@@ -79,7 +79,7 @@ analytics:
 author:
   name             : "Sen Yang"
   avatar           : "profile.jpg"
-  bio              : "Ph.D. candidate, Operations Management, NYU Stern. Online learning, stochastic optimization, and LLM-agent systems."
+  bio              : "Ph.D., Operations Management, NYU Stern. Online learning, stochastic optimization, and LLM-agent systems."
   location         : "New York, NY"
   employer         :
   pubmed           :
