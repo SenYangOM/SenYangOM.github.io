@@ -29,15 +29,11 @@ I am based in New York City. Email: sy2576 [at] stern [dot] nyu [dot] edu.
 **Online Learning, Stochastic Optimization, and Sequential Decision-Making**
 - Adaptive online stochastic gradient descent and regret minimization in non-stationary environments
 - Primal–dual algorithms for online resource allocation (inventory control, e-commerce fulfillment, revenue management)
-- Bandit theory and online convex optimization under structured uncertainty
 
 **LLM-Agent Systems and Tool-Using AI**
-- Multi-agent pipelines with closed-loop evaluation harnesses and verifiable, citation-grounded outputs
-- Paper-derived skill libraries and agent-native tool surfaces (MCP servers, OpenAI tool specifications)
-- Tool-use as a structured post-training substrate for domain-specialized LLMs
-- Evaluation, hallucination mitigation, and trustworthiness of domain agents
+- Multi-agent systems and closed-loop agent evaluation
+- Tool-using LLMs and post-training for domain-specialized capability
+- Evaluation, hallucination mitigation, and trustworthy AI
 
-**Quantitative Finance, Alpha Research, and Volatility Modeling**
+**Quantitative Finance and Alpha Research**
 - Systematic alpha research and explainable factor discovery in equity and crypto markets
-- Ensemble modeling for return prediction across regression families, loss functions, and horizons
-- Options theory and volatility-change-rate estimation for short-dated derivatives
