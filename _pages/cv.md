@@ -9,9 +9,9 @@ redirect_from:
 
 {% include base_path %}
 
-> 📄 **Download PDF:** [SenYang-CV.pdf](/files/SenYang-CV.pdf)
+> 📄 **Download PDF:** [SenYang_NYU_CV.pdf](/files/SenYang_NYU_CV.pdf)
 >
-> *(PDF generated from `senyang.tex` — last refreshed April 2026.)*
+> *(Last refreshed April 2026.)*
 
 # Education
 
@@ -38,9 +38,9 @@ redirect_from:
 
 # Personal projects
 
-* **[`iv_solutions`](https://github.com/SenYangOM/iv_solutions)** — a framework that treats peer-reviewed methodology from finance, accounting, economics, and operations research as a first-class tool surface for LLM agents. Three-component architecture — data (APIs + MCP connectors to filings and market data), skills (citation-grounded, test-verified implementations derived from academic papers), solutions (workflows and sub-agents composing data and skills into concrete applications) — each solution gated by a purpose-built evaluation harness. Parallel MCP + OpenAI tool surfaces; four LLM sub-agent personas for self-validation and citation auditing.
+* **[`iv_solutions`](https://github.com/SenYangOM/iv_solutions)** — a framework that treats peer-reviewed methodology from finance, accounting, economics, and operations research as a first-class tool surface for LLM agents. Three interacting components — *data* (ingestion from corporate disclosures and market sources through APIs and MCP), *skills* (a library of citation-grounded, test-verified implementations derived directly from academic papers, each carrying its formula, paper reference, test harness, and provenance trace), and *solutions* (workflows and sub-agents that compose data and skills into concrete applications) — each solution gated by a purpose-built evaluation harness. The skill library is exposed through parallel MCP and OpenAI tool specifications; four LLM sub-agent personas (`accounting_expert`, `quant_finance_methodologist`, `evaluation_agent`, `citation_auditor`) self-validate outputs and flag hallucinated citations before delivery. A research direction that motivates the framework is the use of academic citation networks as a structured post-training substrate for tool-using LLMs.
 
-* **Self-funded crypto research account** — 18-month live track on a $10K test account, mid-frequency, ~55% trailing-year returns. Pipeline architecture mirrors AlphaBot. PnL link sharable on request.
+* **Self-funded crypto research account** — an independent deployment of the AlphaBot architecture on mid-frequency crypto trading outside Cubist, as a cross-market validation of the scaffolding. 18-month live track on a self-funded $10K testing account; [public performance dashboard](https://dash.300k.xyz/group/300kinvestorshowcaseaccounts?period=30d) — set the time range to Jan 1, 2025 to view the full track.
 
 # Working papers
 
