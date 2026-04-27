@@ -25,9 +25,7 @@ redirect_from:
 # Experience
 
 * **Cubist (Point72)** — *Quantitative Research Intern, NYC* *(Sep 2025 – Feb 2026)*
-  * Built **AlphaBot**, a multi-LLM agent system for systematic alpha discovery on US equities. Identified **80+ significant meta-alphas** across momentum, mean reversion, liquidity, information flow and other risk factors; expanded into broader downstream alpha families with automatic code implementation.
-  * Ran Claude Opus, GPT-5, and Gemini 2.5 Pro side-by-side as orthogonal proposers (~3.7% expression overlap between Opus and GPT-5); empirical yield ranking on this task is **Opus 12.7 > GPT-5 11.0 > Gemini 9.7** expressions per call, with Opus the most cost-effective.
-  * Pipeline scale: 141/141 successful Step-2 brainstorm calls per alpha (47 CoE × 3 LLMs), **1,501 expressions backtested** across Alpha1 → Alpha43, **166 high-Sharpe (>1.0) survivors**, on **>$80K of cumulative LLM-API spend** across the production and research deployments.
+  * Built **AlphaBot**, a multi-LLM agent system for systematic alpha discovery on US equities. Identified **80+ significant meta-alphas** across momentum, mean reversion, liquidity, information flow and other risk factors, then expanded into broader downstream alpha families with automatic code implementation; across the three frontier model families in the ensemble, research-output quality ranks **Opus > GPT > Gemini**.
   * Developed rolling-period statistical validation and robust selection pipeline (odd/even split overfitting controls) to minimize overfit-to-regime.
   * Trained ensemble models combining surviving alphas across regression families, loss functions, and targets — promising Sharpe on both large- and small-cap US equities.
 
@@ -42,7 +40,7 @@ redirect_from:
 
 * **AlphaBot — Personal Deployment.** Independent deployment of the AlphaBot architecture on mid-frequency crypto trading outside Cubist (joint with Beier Liu) as a cross-market validation of the scaffolding. **18-month live track** on a self-funded $10K testing account; [public performance dashboard](https://dash.300k.xyz/group/300kinvestorshowcaseaccounts?period=30d) — set the time range to Jan 1, 2025 to view the full track. Same architecture as the Cubist deployment; different market, same scaffolding produces surviving factors — evidence that the agent system is doing real work rather than overfitting to a single market regime.
 
-* **[IvorySquare](https://github.com/SenYangOM/IvorySquareSolutions)** (*Apr 2026 – present, with Han Yan*) — a framework that treats peer-reviewed methodology as a first-class tool surface for LLM agents. A foundational curriculum layer covers eight textbooks across finance/accounting (CFA L1, CPA FAR) and operations research (Bertsimas-Tsitsiklis, Boyd-Vandenberghe, Ross stochastic, Ross probability) — ninety-five candidate subsection nodes in a prerequisite DAG, twelve materialized subsection skills under a two-dimensional bare-LLM filter (`closed_form_determinism` / `conceptual_high_value` / `llm_fails`), each `closed_form_determinism` skill shipping a deterministic `code/` reference implementation plus a green `pytest` suite. A six-stage LLM-orchestrated paper-to-skill pipeline (extraction, digest, implementation, unit-test authoring, replication harness, three-persona verification) targets ≈5M tokens of deliberate spend per paper with cost tracking and persona gates. Both layers expose MCP and OpenAI tool surfaces.
+* **[IvorySquare](https://github.com/SenYangOM/IvorySquareSolutions)** (*Apr 2026 – present, with Han Yan*) — a framework that treats peer-reviewed methodology — across finance, accounting, economics, and operations research — as a first-class tool surface for LLM agents. Skills are paper-derived, citation-grounded, and gated by purpose-built evaluation harnesses; the human-expert layer remains disjoint from engineering through declarative persona contracts. The skill graph is structured in two coupled tiers — a foundational concept layer at textbook-subsection granularity under prerequisite ordering, and a paper-derived methodology layer with formal implementations, worked-example replication, and line-item citation provenance — both exposed as declarative MCP and OpenAI tool surfaces. Motivating research direction: *academic citation networks as a structured post-training substrate for tool-using LLMs* — each skill supplies both a tool-use trace and a verifiable ground-truth signal, and the citation topology gives a natural curriculum from primitive methods to composite ones.
 
 # Working papers
 
@@ -56,6 +54,3 @@ redirect_from:
 # Skills
 
 * **Languages:** Python, MATLAB.
-* **LLM-agent stack:** Anthropic SDK (Claude Opus, Sonnet) with extended thinking and prompt caching; OpenAI SDK (GPT-5 with reasoning tokens); Gemini API; Model Context Protocol (MCP) servers.
-* **Quant-research stack:** factor research and backtest harness design; rolling-period statistical validation; odd/even-sample consistency checks; ensemble prediction models across regression families, loss functions, and targets.
-* **Engineering:** parallel pipelines (`ProcessPoolExecutor`, `ThreadPoolExecutor`); API-rate-limit-aware orchestration across multiple model providers; hard separation between LLM-proposed candidates and harness-decided survivors.

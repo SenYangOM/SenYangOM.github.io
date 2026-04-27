@@ -234,9 +234,7 @@
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Built \textbf{AlphaBot}, a closed-loop multi-LLM agent system for systematic alpha discovery on US equities. Identified \textbf{80+ significant meta-alphas} across Momentum, Mean Reversion, Liquidity, Information Flow and other Risk Factors; expanded into broader downstream alpha families with automatic code implementation.
-                \item Ran Claude Opus, GPT-5, and Gemini 2.5 Pro side-by-side as orthogonal proposers (\textasciitilde 3.7\% expression overlap between Opus and GPT-5); empirical yield ranking on this task is \textbf{Opus 12.7 > GPT-5 11.0 > Gemini 9.7} expressions per call, with Opus the most cost-effective.
-                \item Pipeline scale: 141/141 successful Step-2 brainstorm calls per alpha (47 centers-of-expertise $\times$ 3 LLMs), \textbf{1{,}501 expressions backtested} across Alpha1 $\to$ Alpha43, \textbf{166 high-Sharpe (>1.0) survivors}, on \textbf{>\$80K of cumulative LLM-API spend} across the production and research deployments.
+                \item Built \textbf{AlphaBot}, a closed-loop multi-LLM agent system for systematic alpha discovery on US equities. Identified \textbf{80+ significant meta-alphas} across Momentum, Mean Reversion, Liquidity, Information Flow and other Risk Factors, then expanded into broader downstream alpha families with automatic code implementation; across the three frontier model families in the ensemble, research-output quality ranks \textbf{Opus > GPT > Gemini}.
                 \item Developed rolling-period statistical validation and robust selection pipeline (odd/even split overfitting controls) to minimize overfit-to-regime.
                 \item Trained ensemble prediction models combining surviving alphas across regression families, loss functions, and targets -- promising Sharpe on both large- and small-cap US equities.
             \end{highlights}
@@ -286,10 +284,9 @@
         \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-                \item Framework that treats peer-reviewed methodology as a first-class tool surface for LLM agents. \href{https://github.com/SenYangOM/IvorySquareSolutions}{github.com/SenYangOM/IvorySquareSolutions}
-                \item \textbf{Foundational curriculum layer} covers eight textbooks across finance/accounting (CFA L1, CPA FAR) and operations research (Bertsimas-Tsitsiklis, Boyd-Vandenberghe, Ross stochastic, Ross probability) -- ninety-five candidate subsection nodes in a prerequisite DAG, twelve materialized subsection skills under a two-dimensional bare-LLM filter (\texttt{closed\_form\_determinism} / \texttt{conceptual\_high\_value} / \texttt{llm\_fails}); each \texttt{closed\_form\_determinism} skill ships a deterministic \texttt{code/} reference plus a green \texttt{pytest} suite.
-                \item \textbf{Paper-derived skill layer} produced by a six-stage LLM-orchestrated pipeline (extraction, digest, implementation, unit-test authoring, replication harness, three-persona verification) targeting $\approx$5M tokens of deliberate spend per paper, with cost-tracking instrumentation and structured persona-verdict gates.
-                \item Both layers expose MCP and OpenAI tool surfaces from one library.
+                \item Designed \textbf{IvorySquare}, a framework that treats peer-reviewed methodology -- across finance, accounting, economics, and operations research -- as a first-class tool surface for LLM agents. Skills are paper-derived, citation-grounded, and gated by purpose-built evaluation harnesses; the human-expert layer remains disjoint from engineering through declarative persona contracts. \href{https://github.com/SenYangOM/IvorySquareSolutions}{github.com/SenYangOM/IvorySquareSolutions}
+                \item Architected the skill graph as two coupled tiers: a foundational concept layer at textbook-subsection granularity under prerequisite ordering, and a paper-derived methodology layer with formal implementations, worked-example replication, and line-item citation provenance. Both tiers expose declarative MCP and OpenAI tool surfaces from one library.
+                \item Motivating research direction: \textit{academic citation networks as a structured post-training substrate for tool-using LLMs} -- each skill supplies both a tool-use trace and a verifiable ground-truth signal, and the citation topology gives a natural curriculum from primitive methods to composite ones.
             \end{highlights}
         \end{onecolentry}
 
@@ -378,21 +375,6 @@
 
         \begin{onecolentry}
             \textbf{Languages:} Python, MATLAB.
-        \end{onecolentry}
-        \vspace{0.10 cm}
-
-        \begin{onecolentry}
-            \textbf{LLM-agent stack:} Anthropic SDK (Claude Opus, Sonnet) with extended thinking and prompt caching; OpenAI SDK (GPT-5 with reasoning tokens); Gemini API; Model Context Protocol (MCP) servers.
-        \end{onecolentry}
-        \vspace{0.10 cm}
-
-        \begin{onecolentry}
-            \textbf{Quant-research stack:} factor research and backtest harness design; rolling-period statistical validation; odd/even-sample consistency checks; ensemble prediction models across regression families, loss functions, and targets.
-        \end{onecolentry}
-        \vspace{0.10 cm}
-
-        \begin{onecolentry}
-            \textbf{Engineering:} parallel pipelines (\texttt{ProcessPoolExecutor}, \texttt{ThreadPoolExecutor}); API-rate-limit-aware orchestration across multiple model providers; hard separation between LLM-proposed candidates and harness-decided survivors.
         \end{onecolentry}
         \vspace{0.2 cm}
 
