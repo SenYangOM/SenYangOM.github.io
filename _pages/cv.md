@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-> 📄 **Download PDF:** [SenYang_NYU_CV_Apr27.pdf](/files/SenYang_NYU_CV_Apr27.pdf)
+> 📄 **Download PDF:** [SenYang_NYU_CV_Apr26.pdf](/files/SenYang_NYU_CV_Apr26.pdf)
 >
 > *(Last refreshed April 2026.)*
 
